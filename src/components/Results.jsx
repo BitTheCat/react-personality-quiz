@@ -1,7 +1,8 @@
 import  { useContext } from 'react';
 import { UserContext } from './UserContext';
+import PropTypes from 'prop-types';
 
-export default function Results({ element, artwork }) {
+export default function Results({ element, artwork, loading}) {
   
     const { name } = useContext(UserContext);
 
@@ -18,8 +19,14 @@ export default function Results({ element, artwork }) {
           <p>{artwork.objectDate}</p>
         </div>
       ) : (
-        <p>No artwork found.</p>
+        <p>{loading ? "Fetching..." : "No artwork found."}</p>
       )}
     </div>
   );
 }
+
+Results.propTypes = {
+    element: PropTypes.string.isRequired,
+    artwork: PropTypes.object.isRequired,
+    loading: PropTypes.bool.isRequired,
+};

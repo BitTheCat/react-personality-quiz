@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export default function Question({ question, options, onAnswer }) {
   return (
     <div>
@@ -17,3 +19,9 @@ export default function Question({ question, options, onAnswer }) {
     </div>
   );
 }
+
+Question.propTypes = {
+    question: PropTypes.string.isRequired,
+    options: PropTypes.arrayOf(PropTypes.string).isRequired,
+    onAnswer: PropTypes.func.isRequired,
+};
