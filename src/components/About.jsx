@@ -7,7 +7,7 @@ export default function About() {
           <p>Data fetching from <a href="https://metmuseum.github.io/" target="_blank">Artwork from the Metropolitan Museum of Art</a></p>
           <hr />
           
-          Plus Feature (not required)<br />
+          Plus Features (not required)<br />
           <ul>
             <li>Reset quiz after change site location</li> 
             <li>Add a new page with information about the project</li> 

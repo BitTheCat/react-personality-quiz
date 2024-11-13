@@ -1,3 +1,7 @@
 # React Final Project Codédex
 
-- Props validation is not required for project
+Plus Features (not required)
+
+- Reset quiz after change site location
+- Add a new page with information about the project
+- Validation components props
